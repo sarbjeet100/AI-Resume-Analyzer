@@ -1,0 +1,39 @@
+.container{
+  padding:20px;
+}
+
+.card{
+  max-width:800px;
+  margin:auto;
+  border-radius:18px !important;
+}
+
+.uploadArea{
+  min-height:400px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border:2px dashed #1976d2;
+  border-radius:15px;
+  padding:40px;
+  text-align:center;
+  transition:.3s;
+}
+
+.uploadArea:hover{
+  background:#f5f9ff;
+}
+
+@media(max-width:768px){
+
+.container{
+padding:10px;
+}
+
+.uploadArea{
+padding:20px;
+min-height:300px;
+}
+
+}

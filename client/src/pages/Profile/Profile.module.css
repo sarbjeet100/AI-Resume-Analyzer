@@ -1,0 +1,37 @@
+.container {
+  padding: 30px;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.card {
+  border-radius: 16px !important;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.info svg {
+  font-size: 28px;
+  color: #1976d2;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}

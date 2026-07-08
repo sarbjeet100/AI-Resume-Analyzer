@@ -1,0 +1,189 @@
+.container {
+  width: 100%;
+  padding: 32px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.loader {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 100%;
+  min-height: 220px;
+  border-radius: 22px !important;
+  transition: all 0.35s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05) !important;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.18) !important;
+}
+
+.recentCard {
+  border-radius: 22px !important;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.recentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.statIcon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  background: #eef4ff;
+}
+
+.statValue {
+  font-size: 34px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.statTitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.progress {
+  margin-top: 18px;
+  height: 9px !important;
+  border-radius: 20px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 45px 0 20px;
+  color: #111827;
+}
+
+.uploadCard {
+  border-radius: 20px !important;
+  transition: 0.3s;
+  border: 1px solid #e5e7eb;
+}
+
+.uploadCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+}
+
+.fileName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge {
+  margin-bottom: 16px;
+}
+
+.meta {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.actionBtn {
+  margin-top: 18px !important;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.emptyState h4 {
+  margin-top: 20px;
+  color: #111827;
+}
+
+.emptyState p {
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .statValue {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .card {
+    border-radius: 18px !important;
+  }
+
+  .uploadCard {
+    border-radius: 18px !important;
+  }
+
+  .statValue {
+    font-size: 24px;
+  }
+}

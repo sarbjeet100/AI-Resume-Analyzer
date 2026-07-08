@@ -1,0 +1,176 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px;
+  background: #f8fafc;
+}
+
+.loader {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.score {
+  font-size: 72px;
+  font-weight: 800;
+  color: #2563eb;
+  line-height: 1;
+}
+
+.card {
+  height: 100%;
+  border-radius: 22px !important;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05) !important;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15) !important;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.skillChip {
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 28px;
+}
+
+.subHeading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #374151;
+  word-break: break-word;
+}
+
+.icon {
+  color: #2563eb;
+}
+
+.feedback {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #4b5563;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.list li {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.progress {
+  margin-top: 18px;
+  height: 10px !important;
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 72px !important;
+  height: 72px !important;
+  background: #2563eb !important;
+}
+
+.paper {
+  border-radius: 18px !important;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.paper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.divider {
+  margin: 18px 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 18px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .score {
+    font-size: 56px;
+  }
+
+  .avatar {
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .score {
+    font-size: 46px;
+  }
+
+  .card,
+  .paper {
+    border-radius: 16px !important;
+  }
+
+  .skills {
+    gap: 8px;
+  }
+
+  .infoRow {
+    font-size: 14px;
+  }
+
+  .feedback {
+    font-size: 14px;
+  }
+}
