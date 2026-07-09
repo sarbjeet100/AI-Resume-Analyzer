@@ -1,5 +1,4 @@
 import User from "../models/User.js";
-import bcrypt from "bcrypt";
 
 // ==========================================
 // Get Logged-in User Profile
