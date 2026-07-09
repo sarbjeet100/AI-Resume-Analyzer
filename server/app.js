@@ -22,11 +22,29 @@ app.use(
   })
 );
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://airesumeanalyzer-beryl.vercel.app"
+];
+
 app.use(
   cors({
-    origin:
-      process.env.CLIENT_URL ||
-      "http://localhost:5173",
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl)
+      if (!origin) return callback(null, true);
+
+      const clientUrl = process.env.CLIENT_URL;
+      const origins = [...allowedOrigins];
+      if (clientUrl) {
+        origins.push(clientUrl.replace(/\/$/, "")); // remove trailing slash if any
+      }
+
+      if (origins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
