@@ -1,0 +1,9 @@
+{
+  "name": "ai-resume-analyzer-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm install --prefix server",
+    "start": "node server/server.js"
+  }
+}
